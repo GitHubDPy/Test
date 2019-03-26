@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
+import java.util.concurrent.ThreadPoolExecutor;
 
 
 public class CallAbleThread{
@@ -15,6 +16,8 @@ public class CallAbleThread{
 		
 		new Thread(futureTask).start();
 		
+		
+		//获取call方法的返回值
 		int i = (int) futureTask.get();
 		
 		
