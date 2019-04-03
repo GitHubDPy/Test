@@ -1,13 +1,9 @@
 package com.wch.test;
 
-import java.util.Collections;
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
 public class ThreadPoolTest {
 
 	

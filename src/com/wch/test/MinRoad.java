@@ -1,6 +1,7 @@
 package com.wch.test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -8,12 +9,10 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
 
 public class MinRoad {
 
 	public static void main(String[] args) {
-		
 		
 		Scanner scanner = new Scanner(System.in);
 		

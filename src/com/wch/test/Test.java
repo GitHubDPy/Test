@@ -1,5 +1,11 @@
 package com.wch.test;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+
 public class Test {
 	
 	int i;
@@ -11,9 +17,10 @@ public class Test {
 
 	public static void main(String args[]) {
 		
-		String string = "abc";
+		Set set = new HashSet<>();
+		Map map = new HashMap<>();
+	
 		
-		System.out.println(string);
 		
 	}
 }

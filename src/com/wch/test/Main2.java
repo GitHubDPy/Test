@@ -4,20 +4,7 @@ import java.util.Scanner;
 
 public class Main2 {
 
-	
-	
-	
-	
-	0abcdefgh1abcdefgh
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
