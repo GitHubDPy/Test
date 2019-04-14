@@ -1,18 +1,20 @@
 package com.wch.test;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Hashtable;
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import com.sun.org.apache.regexp.internal.recompile;
 
 public class DeadLock {
 	private static Lock lock1 = new ReentrantLock();
 	private static Lock lock2 = new ReentrantLock();
 
 	public static void main(String[] args) throws Exception {
+		
 		MyThread1 myThread1 = new MyThread1(lock1, lock2);
 		MyThread2 myThread2 = new MyThread2(lock1, lock2);
 		Thread thread1 = new Thread(myThread1);
@@ -20,6 +22,7 @@ public class DeadLock {
 		thread1.start();
 		thread2.start();
 
+		
 		Random random = new Random();
 	}
 }
